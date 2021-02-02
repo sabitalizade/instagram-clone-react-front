@@ -3,7 +3,7 @@ import React from 'react'
 const MainView = () => {
     return (
             <div className="mainside">
-        <div className="container">
+                <div className="container flex">
                     <div className="leftside">
                         <div className="post">
                             <div className="posttitle">
@@ -49,9 +49,8 @@ const MainView = () => {
                         </div>
                     </div>
                     <div className="rightside">right</div>
+                </div>            
             </div>
-            
-        </div>
     )
 }
 

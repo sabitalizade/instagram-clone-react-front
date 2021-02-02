@@ -42,7 +42,6 @@ img{
 }
 
 
-
 .mainside{
   margin-top: 54px;
   background: rgb(var(--b3f));
@@ -51,8 +50,12 @@ img{
   display: flex;
   box-sizing: border-box;
 }
+.flex{
+  display: flex;
+}
 .mainside .leftside{
   min-width: 614px;
+  /* max-width: 614px; */
   /* background: rgb(71, 19, 19); */
 }
 .mainside .rightside{
