@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
-}
+@import "./variables.css";
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  max-width: 935px;
+  width: 100%;
+  margin: 0 auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main{
+  width: 100%;
+  border-bottom: 1px solid rgb(var(--bc));
+  position: fixed;
+  top: 0;
+  background: #fff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navBar{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  height: 54px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.navBar .search input{
+  border: 1px solid rgb(var(--b6a));
+  outline: none;
+  height: 22px;
+  width: 207px;
+  border-radius: 5px;
+}
+.mainside .leftside .post .postinteraction .iflex ul,
+.navBar .notfication ul{
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+}
+.mainside .leftside .post .postinteraction .iflex ul li,
+.navBar .notfication ul li{
+  list-style: none;
+  margin: 0 10px;
+}
+img{
+  color: #000;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.mainside{
+  margin-top: 54px;
+  background: rgb(var(--b3f));
+  /* background: red; */
+  height: 2000px;
+  display: flex;
+  box-sizing: border-box;
+}
+.mainside .leftside{
+  min-width: 614px;
+  /* background: rgb(71, 19, 19); */
+}
+.mainside .rightside{
+  /* position: fixed; */
+  /* top: 54; */
+  /* left:0; */
+  /* right: 200; */
+  /* min-width:321px; */
+  /* max-width:321px; */
+  width: 100%;
+  /* background: rgb(29, 156, 29); */
+}
+.mainside .leftside .post{
+  border: 1px solid rgb(var(--b6a));
+  margin-top: 40px
+}
+.mainside .leftside .post .posttitle{
+  height: 60px;
+  display: flex;
+ 
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  box-sizing: border-box;
+ ;
+  border-radius: 5px;
+}
+.mainside .leftside .post .posttitle .titleflex{
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+.mainside .leftside .post .posttitle .titleflex .avatar{
+  margin-right:20px;
+}
+.mainside .leftside .post .postimg{
+  max-width: 614px;
+  box-sizing: border-box;
+}
+.mainside .leftside .post .postimg img{
+  max-width: 614px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainside .leftside .post .postinteraction{
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  align-items: center;
+  padding: 0 16px;
 }
